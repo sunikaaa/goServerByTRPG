@@ -1,0 +1,7 @@
+# GET http://localhost:1323
+
+
+POST http://localhost:1323/login
+Content-Type: multipart/form-data;
+Content-Disposition: form-data "name"="text"
+Content-Disposition: form-data "email"="text"
