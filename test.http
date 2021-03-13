@@ -1,7 +1,52 @@
 # GET http://localhost:1323
 
 
-POST http://localhost:1323/login
-Content-Type: multipart/form-data;
-Content-Disposition: form-data "name"="text"
-Content-Disposition: form-data "email"="text"
+# POST http://localhost:1323/signup
+# Content-Type: multipart/form-data;
+# Content-Disposition: form-data "name"="text"
+# Content-Disposition: form-data "email"="text"
+# Content-Disposition: form-data "password"="password"
+
+
+POST http://localhost:1323/signup
+Content-Type: application/json;
+
+{
+    "name":"ass",
+    "password":"pssword",
+    "email":"email@testddsadassadas342321321"
+}
+
+###
+
+POST  http://localhost:1323/signin
+Content-Type: application/json;
+
+{
+    "name":"ass",
+    "email":"email@test",
+    "password":"pssword"
+}
+
+###
+POST  http://localhost:1323/signupByGoogle
+Content-Type: application/json;
+
+{
+    "name":"ass",
+    "email":"email@test22",
+    "password":"pssword"
+}
+
+###
+
+GET https://oauth2.googleapis.com/tokeninfo?access_token=ya29.a0AfH6SMA5r9pmVInCB2bgb9J0Rs1Rh7u-OfHI3MNNWH7AC6MnOysRbQo2v4DerZL4Bohn9NBY8Z515xBfoLuptMGueS-7WwVVcfSV2Uy-5r2_uUGxh5FB94r2p9RyS4SrPo0cqGSXy35eRuVWcEfcNWfTrSeD
+
+
+
+###
+GET https://oauth2.googleapis.com/tokeninfo?id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg0NjJhNzFkYTRmNmQ2MTFmYzBmZWNmMGZjNGJhOWMzN2Q2NWU2Y2QiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIxNjY0NDE2MzExNS1waDFuYXIwcXA4YjVpaGNua2xxbGhxNzFxZzVuc3MzZS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjE2NjQ0MTYzMTE1LXBoMW5hcjBxcDhiNWloY25rbHFsaHE3MXFnNW5zczNlLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEyNzU1MjQyNzQyODcwNTA3MTAzIiwiZW1haWwiOiJzaW4uc2VraS5hcmFAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJ4cDFma0lleXVtb3N0dEZ4eVdaQUd3IiwibmFtZSI6IuOCueODi-OCqyIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaEh0ZXZFeHktSEJLbXdzXzJxcFpFUW02XzRmd1pKT29QRXZDdHlEUT1zOTYtYyIsImdpdmVuX25hbWUiOiLjgqsiLCJmYW1pbHlfbmFtZSI6IuOCueODiyIsImxvY2FsZSI6ImphIiwiaWF0IjoxNjE1NDg5ODg0LCJleHAiOjE2MTU0OTM0ODR9.OLmK4jbyLCv2JSfBqZuVDMLcX7z5nicSdoYyB1CgpHVUDQ0eMMfE_17bvVbJtdw8ygM4Q-Y7h9hHqg9JCMgtA8imuvkziXeZ4OwlMHKm6YaEXPSk6rzFjIXyPZye88E-ZCKt5XlXBlJlOT47BSwbRUggWj6A4ZPwdH-FxgOhoVFS__El4t4sz6WW6vcDi3MP9o5b5RXH1yS6wo4YZ4BsoyS1mj8liDIGxCEL-2cFa3jyDHZqHos3eIfHjmVcRVXGYzFIcT3jXFux765n3YxPg0HvSTCQFwJKkEi1nALkESj1q8KOmbKLMnGnmUF7PtrybdiH5ahoJCqZIcjCacucEA
+###
+
+GET http://localhost:1323/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImVtYWlsQHRlc3QiLCJJRCI6OSwiYWRtaW4iOnRydWUsImV4cCI6MTYxNTc1MTAxMn0.aSBQSComzBlcWxs4OnP8Sa-OAoajDfUrBVcSpHp7ZB0
